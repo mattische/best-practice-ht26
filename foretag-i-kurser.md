@@ -36,15 +36,15 @@ Företag i kurser – mer än bara en gästföreläsning. Namn.
 
 ### 5. Kursen i korthet
 
-Design och användarupplevelse med JavaScript 
+Design och användarupplevelse med JavaScript. Studenterna bygger en webbshop med fokus på UX: förstasida, färg och typografi, interaktivitet, formulär, webbkomponenter, AI och projekt.
 
-### 6. Varför just den veckan?
-Web components ligger i kursens kärna.
+### 6. Varför just kmom05?
 
-Introducerar konceptet till studenterna.
+Kmom05 handlar om webbkomponenter, det vill säga att strukturera JavaScript så att det kan återanvändas. Momentet introducerar konceptet för studenterna, och det är just det IKEA arbetar med.
 
 ### 7. Besöket
-Två alumnutvecklare från Inter IKEA visade hur och varför de använder web components.
+
+Två alumnutvecklare från Inter IKEA visade hur och varför de använder web components. Besöket finns som inspelning i momentet. Studenterna bygger produktlistningen som en komponent per produkt (övning) och gör om varukorgens orderrader till webbkomponenter (uppgift). Idén är att kapsla in kod med ett ansvarsområde för att kunna återanvända den (DRY, SRP, encapsulation). Reflektionsfrågan är om web components ger en bättre struktur.
 
 ## Lysa i DV1707 Projekt webbprogrammering frontend (du)
 
