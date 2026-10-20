@@ -1,0 +1,49 @@
+/* Färger från kursen Best Practice 2026 (Canvas): #055064 mörk petrol, #f08050 orange. */
+:root {
+    --sl-font: Helvetica, Arial, sans-serif;
+    --sl-color-accent-low: #d4e3e5;
+    --sl-color-accent: #055064;
+    --sl-color-accent-high: #043c4b;
+}
+
+:root[data-theme='dark'] {
+    --sl-color-accent-low: #043c4b;
+    --sl-color-accent: #f08050;
+    --sl-color-accent-high: #f5b090;
+}
+
+.header {
+    background-color: #055064;
+    color: #ffffff;
+}
+
+.site-title {
+    color: #ffffff;
+}
+
+.speakers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 1.5rem 0;
+    padding-top: 1rem;
+    border-top: 2px solid #f08050;
+}
+
+.speaker {
+    flex: 1 1 280px;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.speaker img {
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.speaker p {
+    margin: 0;
+}
