@@ -32,16 +32,19 @@ Företag i kurser – mer än bara en gästföreläsning. Namn.
 - Inblick: hur ett företag arbetar med tekniker och koncept.
 - Företaget blir en del av kursmaterialet, inte ett avbrott.
 
-## IKEA i DV1706 Webbapplikationer för mobila enheter (kollegan)
+## IKEA i DV1705 Webbapplikationer för mobila enheter
 
 ### 5. Kursen i korthet
-Webbkomponenter, router, formulär/CRUD, JWT, enhets-API:er, realtid, PWA, projekt.
 
-### 6. Varför just den veckan? **[fyll i]**
+Design och användarupplevelse med JavaScript 
+
+### 6. Varför just den veckan?
 Web components ligger i kursens kärna.
 
-### 7. Besöket **[fyll i]**
-Två alumnutvecklare från Inter IKEA visade hur de använder web components.
+Introducerar konceptet till studenterna.
+
+### 7. Besöket
+Två alumnutvecklare från Inter IKEA visade hur och varför de använder web components.
 
 ## Lysa i DV1707 Projekt webbprogrammering frontend (du)
 
