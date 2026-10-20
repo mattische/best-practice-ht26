@@ -44,7 +44,7 @@ Kmom05 handlar om webbkomponenter, det vill säga att strukturera JavaScript så
 
 ### 7. Besöket
 
-Två alumnutvecklare från Inter IKEA visade hur och varför de använder web components. Besöket finns som inspelning i momentet. Studenterna bygger produktlistningen som en komponent per produkt (övning) och gör om varukorgens orderrader till webbkomponenter (uppgift). Idén är att kapsla in kod med ett ansvarsområde för att kunna återanvända den (DRY, SRP, encapsulation). Reflektionsfrågan är om web components ger en bättre struktur.
+Två utvecklare som är alumner från Inter IKEA visade hur och varför de använder web components. Besöket finns som inspelning i momentet. Studenterna bygger produktlistningen som en komponent per produkt (övning) och gör om varukorgens orderrader till webbkomponenter (uppgift). Idén är att kapsla in kod med ett ansvarsområde för att kunna återanvända den (DRY, SRP, encapsulation). Reflektionsfrågan är om web components ger en bättre struktur.
 
 ## Lysa i DV1707 Projekt webbprogrammering frontend (du)
 
@@ -59,7 +59,7 @@ Två alumnutvecklare från Inter IKEA visade hur och varför de använder web co
 
 ### 10. Besöket
 - Lysa: svensk fondrobot, över 220 000 kunder.
-- Besökare: kontorschef/vice president och en utvecklare som läst hos oss.
+- Besökare: kontorschef och en utvecklare som är alumn.
 - Föreläsningen finns som video på sprintsidan.
 
 ### 11. Vad det gav **[fyll i]**
