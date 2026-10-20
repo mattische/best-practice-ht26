@@ -7,7 +7,7 @@ Utkast. 15 minuter, två föreläsare. Fält markerade med **[fyll i]** behöver
 | Min | Vem | Del |
 |---|---|---|
 | 0–4 | Mattias | Intro: idé och mervärde |
-| 4–9 | Emil | IKEA i DV1706 |
+| 4–9 | Emil | IKEA i DV1705 |
 | 9–13 | Mattias | Lysa i DV1707 |
 | 13–15 | Båda | Avslut och frågor |
 
@@ -32,7 +32,7 @@ Företag i kurser – mer än bara en gästföreläsning. Namn.
 - Inblick: hur ett företag arbetar med tekniker och koncept.
 - Företaget blir en del av kursmaterialet, inte ett avbrott.
 
-## IKEA i DV1705 Webbapplikationer för mobila enheter
+## IKEA i DV1705 Design och användarupplevelse med JavaScript
 
 ### 5. Kursen i korthet
 
@@ -75,4 +75,4 @@ Studenternas reaktioner, frågor, citat, effekt i inlämningarna.
 - Koppla besöket till rätt kursmoment.
 - Gör företaget till en del av materialet.
 - Använd alumner.
-- Länkar: https://dbwebb-webapp.github.io/ och https://dbwebb-projfront.github.io/
+- Länkar: https://dbwebb-jsux.github.io/ och https://dbwebb-projfront.github.io/

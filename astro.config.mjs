@@ -14,7 +14,7 @@ export default defineConfig({
 				{ label: 'Presentation', link: '/presentation/' },
 				{
 					label: 'Om föreläsningen',
-					items: ['konceptet', 'dv1706', 'dv1707', 'lardomar'],
+					items: ['konceptet', 'dv1705', 'dv1707', 'lardomar'],
 				},
 			],
 			customCss: ['./src/styles/custom.css'],
