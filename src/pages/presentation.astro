@@ -15,6 +15,11 @@ const qr = await QRCode.toString(siteUrl, { type: 'svg', margin: 2, color: { dar
       .reveal { font-size: 36px; }
       .reveal ul { display: block; }
       .qr svg { width: 340px; height: 340px; margin: 0 auto; display: block; }
+      .sprints { display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; font-size: 20px; margin: 30px 0 10px; }
+      .sprint { background: #055064; border-radius: 6px; padding: 10px 6px; text-align: center; }
+      .sprint b { display: block; color: #f08050; font-size: 22px; }
+      .marker { text-align: center; color: #f08050; font-size: 20px; }
+      .cycle { font-size: 24px; margin: 8px 0; }
       #owner { position: fixed; left: 16px; bottom: 10px; z-index: 10; font-size: 56px; opacity: 0.35; color: #fff; font-family: monospace; }
     </style>
   </head>
@@ -71,6 +76,21 @@ const qr = await QRCode.toString(siteUrl, { type: 'svg', margin: 2, color: { dar
             <li>User stories, GitHub Flow, code review</li>
             <li>Inlämning per sprint: grupp + individuell reflektion</li>
           </ul>
+        </section>
+        <section data-owner="msc">
+          <h2>Kursens upplägg</h2>
+          <div class="sprints">
+            <div class="sprint" style="grid-column: span 1"><b>Sprint 0</b>Setup, grupp</div>
+            <div class="sprint" style="grid-column: span 2"><b>Sprint 1</b>Planera, React</div>
+            <div class="sprint" style="grid-column: span 2"><b>Sprint 2</b>Estimering, tid</div>
+            <div class="sprint" style="grid-column: span 2"><b>Sprint 3</b>Förfina arbetssätt</div>
+            <div class="sprint" style="grid-column: span 2"><b>Sprint 4</b>Mot slutet</div>
+            <div class="sprint" style="grid-column: span 1"><b>Sprint 99</b>Leverans</div>
+            <div class="marker" style="grid-column: 2 / span 2">▲ Lysa besöker</div>
+          </div>
+          <p class="cycle">Varje sprint: planering → implementation → code review → retrospektiv</p>
+          <p class="cycle">Resultat per sprint: gemensam inlämning + individuell reflektion</p>
+          <aside class="notes">Tio veckor. Sprint 0 och 99 är en vecka, sprint 1–4 två veckor vardera. Studenterna bygger en React-app i grupp mot en kravspecifikation, MVP vid leverans.</aside>
         </section>
         <section data-owner="msc">
           <h2>Varför sprint 1?</h2>
