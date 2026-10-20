@@ -1,6 +1,10 @@
 ---
 import 'reveal.js/dist/reveal.css';
 import 'reveal.js/dist/theme/black.css';
+import QRCode from 'qrcode';
+
+const siteUrl = 'https://mattische.github.io/best-practice-ht26/';
+const qr = await QRCode.toString(siteUrl, { type: 'svg', margin: 2, color: { dark: '#055064', light: '#ffffff' } });
 ---
 <html lang="sv">
   <head>
@@ -10,6 +14,7 @@ import 'reveal.js/dist/theme/black.css';
       .reveal h1, .reveal h2 { color: #f08050; text-transform: none; }
       .reveal { font-size: 36px; }
       .reveal ul { display: block; }
+      .qr svg { width: 340px; height: 340px; margin: 0 auto; display: block; }
       #owner { position: fixed; left: 16px; bottom: 10px; z-index: 10; font-size: 56px; opacity: 0.35; color: #fff; font-family: monospace; }
     </style>
   </head>
@@ -34,8 +39,8 @@ import 'reveal.js/dist/theme/black.css';
           <h2>Idé</h2>
           <ul>
             <li>Företag sponsrar en kursvecka</li>
-            <li>Genomfördes i kurspaketet Webbprogrammering – frontend</li>
-            <li>Ingår i både campus- och distansprogrammen</li>
+            <li>Genomfördes i ett par kurser i kurspaketet Webbprogrammering – frontend</li>
+            <li>Både campus- och distansstudenter ingick</li>
             <li>Inter IKEA och Lysa</li>
           </ul>
         </section>
@@ -110,6 +115,11 @@ import 'reveal.js/dist/theme/black.css';
             <li><a href="https://dbwebb-projfront.github.io/">dbwebb-projfront.github.io</a></li>
           </ul>
           <p><small><a href="../">Tillbaka till sajten</a></small></p>
+        </section>
+        <section data-owner="msc · efo">
+          <h2>Läs mer på siten</h2>
+          <div class="qr" set:html={qr} />
+          <p><small>{siteUrl}</small></p>
         </section>
       </div>
     </div>

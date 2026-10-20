@@ -22,7 +22,7 @@ Företag i kurser – mer än bara en gästföreläsning. Namn.
 
 ### 3. Idén
 - Företag sponsrar en kursvecka i stället för en fristående föreläsning.
-- Testat förra läsåret i kurspaketet Webbprogrammering – frontend.
+- Genomfört förra läsåret i ett par kurser i kurspaketet Webbprogrammering – frontend, med både campus- och distansstudenter.
 - Två företag: Inter IKEA och Lysa.
 
 ### 4. Varför det är mer än en gästföreläsning (mervärde)
