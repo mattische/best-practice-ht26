@@ -10,17 +10,19 @@ import 'reveal.js/dist/theme/black.css';
       .reveal h1, .reveal h2 { color: #f08050; text-transform: none; }
       .reveal { font-size: 36px; }
       .reveal ul { display: block; }
+      #owner { position: fixed; right: 12px; bottom: 8px; z-index: 10; font-size: 14px; opacity: 0.35; color: #fff; font-family: monospace; }
     </style>
   </head>
   <body>
+    <div id="owner"></div>
     <div class="reveal">
       <div class="slides">
-        <section>
+        <section data-owner="msc · efo">
           <h1>Företag i kurser</h1>
           <h3>mer än bara en gästföreläsning</h3>
           <p><small>Best Practice HT26 · tryck F för helskärm, S för talarvy</small></p>
         </section>
-        <section>
+        <section data-owner="msc">
           <h2>Utgångsläge</h2>
           <ul>
             <li>Koppla företagen till var studenterna är i kursen</li>
@@ -28,7 +30,7 @@ import 'reveal.js/dist/theme/black.css';
             <li>Utbildningen ska ständigt vara relevant för branschen</li>
           </ul>
         </section>
-        <section>
+        <section data-owner="msc">
           <h2>Idé</h2>
           <ul>
             <li>Företag sponsrar en kursvecka</li>
@@ -36,7 +38,7 @@ import 'reveal.js/dist/theme/black.css';
             <li>Inter IKEA och Lysa</li>
           </ul>
         </section>
-        <section>
+        <section data-owner="msc">
           <h2>Mer än en gästföreläsning</h2>
           <ul>
             <li class="fragment">Relevans: tekniken används på riktigt</li>
@@ -46,7 +48,7 @@ import 'reveal.js/dist/theme/black.css';
             <li class="fragment">En del av kursmaterialet</li>
           </ul>
         </section>
-        <section>
+        <section data-owner="efo">
           <h2>IKEA i DV1706</h2>
           <p>Webbapplikationer för mobila enheter</p>
           <ul>
@@ -55,7 +57,7 @@ import 'reveal.js/dist/theme/black.css';
           </ul>
           <aside class="notes">Kollegan fyller i vecka och detaljer.</aside>
         </section>
-        <section>
+        <section data-owner="msc">
           <h2>DV1707 i korthet</h2>
           <ul>
             <li>Gruppprojekt i React, agila sprintar</li>
@@ -63,7 +65,7 @@ import 'reveal.js/dist/theme/black.css';
             <li>Inlämning per sprint: grupp + individuell reflektion</li>
           </ul>
         </section>
-        <section>
+        <section data-owner="msc">
           <h2>Varför sprint 1?</h2>
           <ul>
             <li>Gruppen sätter upp sitt arbetssätt</li>
@@ -71,7 +73,7 @@ import 'reveal.js/dist/theme/black.css';
             <li>Lysa visar sin struktur just då</li>
           </ul>
         </section>
-        <section>
+        <section data-owner="msc">
           <h2>Lysa-besöket</h2>
           <ul>
             <li>Svensk fondrobot, över 220 000 kunder</li>
@@ -79,19 +81,19 @@ import 'reveal.js/dist/theme/black.css';
             <li>React i produktion: team och struktur</li>
           </ul>
         </section>
-        <section>
+        <section data-owner="msc">
           <h2>Vad det gav</h2>
           <ul>
             <li>Ett bra sätt att koppla undervisning och kursmaterial till branschen på riktigt</li>
             <li>Studenterna ser hur teknikerna används i verkligheten</li>
           </ul>
         </section>
-        <section>
+        <section data-owner="msc · efo">
           <h2>Alumner i branschen</h2>
           <p>Studenter från utbildningen har anställts av företag i branschen, bland annat Inter IKEA och Lysa.</p>
           <p>De arbetar nu med de tekniker och koncept vi undervisar i.</p>
         </section>
-        <section>
+        <section data-owner="msc · efo">
           <h2>Erfarenheter vi tar vidare</h2>
           <ul>
             <li>Koppla besöket till rätt moment</li>
@@ -99,7 +101,7 @@ import 'reveal.js/dist/theme/black.css';
             <li>Använd alumner</li>
           </ul>
         </section>
-        <section>
+        <section data-owner="msc · efo">
           <h2>Frågor?</h2>
           <ul>
             <li><a href="https://dbwebb-webapp.github.io/">dbwebb-webapp.github.io</a></li>
@@ -112,7 +114,12 @@ import 'reveal.js/dist/theme/black.css';
     <script>
       import Reveal from 'reveal.js';
       import Notes from 'reveal.js/plugin/notes/notes.esm.js';
-      new Reveal({ hash: true, plugins: [Notes] }).initialize();
+      const deck = new Reveal({ hash: true, plugins: [Notes] });
+      const owner = document.getElementById('owner');
+      const show = () => { owner.textContent = deck.getCurrentSlide()?.dataset.owner ?? ''; };
+      deck.on('ready', show);
+      deck.on('slidechanged', show);
+      deck.initialize();
     </script>
   </body>
 </html>
